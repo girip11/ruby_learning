@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.rendererType": "dom",
+    "ruby.useBundler": true,
+    "ruby.pathToBundler": "bundle",
+    "ruby.useLanguageServer": true,
+    "ruby.lint": {
+      "rubocop": {
+        "useBundler": true
+      }
+    },
+    "ruby.format": false,
+
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": "\\.rb$",
+          // "cmd": "echo ${file}",
+          "cmd": "bundle exec rbprettier --write '${file}'",
+          "isAsync": false
+        }
+      ]
+    },
+
+    "ruby.lintDebounceTime": 1000,
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate",
+    "solargraph.useBundler": true,
+    "solargraph.bundlerPath": "bundle",
+    "git.autorefresh": true,
+    "liveServer.settings.port": 5501,
+    "markdownlint.ignore": ["**/*.md.html"],
+    "files.insertFinalNewline": true,
+    "files.associations": {
+      "*.md.html": "markdown"
+    }
+  }
+}
