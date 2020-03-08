@@ -1,3 +1,4 @@
 ---
 BUNDLE_PATH: "./gem/dependencies/"
 BUNDLE_DISABLE_SHARED_GEMS: "true"
+BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"

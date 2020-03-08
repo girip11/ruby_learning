@@ -23,3 +23,7 @@ gem "rubocop-rails", require: false
 gem "prettier", require: false
 
 gem "solargraph", require: false
+
+# static type checker for ruby from stripe
+gem "sorbet"
+gem "sorbet-runtime"
